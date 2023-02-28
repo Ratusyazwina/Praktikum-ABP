@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOD2 ABP Ratu</title>
+</head>
+<body>
+    <h1>Praktikum ABP MOD2</h1>
+    <p> Nama : Ratu Syazwina </p>
+    <p> NIM : 1301204550 </p>
+    <h2> Dapur Ibu </h2>
+    </p> Seperti Masakan ibu </p>
+    <div class="menu">
+        <ul>
+            <li><a href="#List">List</a></li>
+            <li><a href="Resep">Resep</a></li>
+            <li><a href="Daftar">Daftar</a></li>
+        </ul>
+    
+    <section id="List">
+        <h2>List Manu Hari Ini</h2>
+        <p> Menu akan berganti setiap minggunya</p>
+        <p>Hanya melayani menu makan siang</p>
+        <table width ="80%" height="50" border="1">
+            <tr>
+            <th>Senin</th>
+            <th>Selasa</th>
+            <th>Rabu</th>
+            <th>Kamis</th>
+            <th>Jumat</th>            
+            </tr>
+            <th>Nasi</th>
+            <th>Nasi</th>
+            <th>Nasi</th>
+            <th>Nasi</th>
+            <th>Nasi</th>
+            </tr>
+            <th>Pepes Ayam</th>
+            <th>Sayur Asem</th>
+            <th>Rolade Asam Manis</th>
+            <th>Sayur Sop</th>
+            <th>Soto Ayam</th>
+            </tr>
+            <th>tahu goreng</th>
+            <th>Ayam goreng</th>
+            <th>Tempe goreng</th>
+            <th>Perkedel Kentang</th>
+            <th>Perkedel Jagung</th>
+            
+        </table>
+    </section>
+
+    <!---untuk Resep-->
+    <section id="Resep">
+        <h2>Resep Camilan Mudah</h2>
+        <img src="https://i.pinimg.com/564x/19/bf/7f/19bf7fd5355f8a5b669d8fe4a37fddfd.jpg" width="50%" height="50%"/>
+        <p>Gambar 1</p>
+        <br></br>
+        <audio controls>
+            <source scr="hourse.ogg" type="audio/ogg"> <source scr="horse.mp3"
+            type="audio/mpeg"> Your browser does not support the audio element.
+        </audio>
+        <br><br>
+        <video width="400" controls>
+            <source src="mov_bbb.mp4" type="video/mp4"> <source src="mov_bbb.ogg"
+            type="video/ogg"> your browser does not support HTML5 video.
+        </video>
+
+        <p>Resep mudah membuat<a href="https://youtu.be/Y6CPyuQ1jAU" target="_blank"> Dimsum Ayam</a>. </p>
+        <iframe width="560" height="315" scr="https://youtu.be/Y6CPyuQ1jAU" title="Youtube Video Player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard- write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+        <a href="https://youtu.be/Y6CPyuQ1jAU"> Visit Video </a>
+    </section>
+
+    <section>
+        <h2>Form pemesanan  </h2>
+        <form action="" method="POST">
+        <table border="0" width="120">
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama_input" class="text-field" id="nama_id"
+                    placeholder="Masukan nama"/></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><input type="text" name="alamat_input" class="text-field" id="alamat_id"
+                    placeholder="Masukan Alamat"/></td>
+            </tr>
+            <tr>
+                <td>Nomor Handphone</td>
+                <td>:</td>
+                <td><input type="text" name="noHP_input" class="text-field" id="noHP_id"
+                    placeholder="Masukan Nomor HP"/></td>
+            </tr>
+            <tr>
+                <td>Hari</td>
+                <td>:</td>
+                <td><input type="checkbox" name="hari_input"
+                    class="checkBox" id="checkB_id" value="Senin">Senin</input><br/>
+                    <input type="checkbox" name="hari_input"
+                    class="checkBox" id="checkB_id" value="Selasa">Selasa</input><br/>
+                    <input type="checkbox" name="hari_input"
+                    class="checkBox" id="checkB_id" value="Rabu">Rabu</input><br/>
+                    <input type="checkbox" name="hari_input"
+                    class="checkBox" id="checkB_id" value="Kamis">Kamis</input><br/>
+                    <input type="checkbox" name="hari_input"
+                    class="checkBox" id="checkB_id" value="Jumat">Jumat</input><br/>
+
+                    </td>
+            </tr>
+            <tr>
+                <td>Jumlah Pesanan</td>
+                <td>:</td>
+                <td><select name="jp_imput" class="dropdown" id="jp_id"><option value=""
+                    selected>-----jumlah-----</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">jumlah lainnya</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Pembayaran</td>
+                <td>:</td>
+                <td><input type="radio" name="JeP_input" class="radioB" id="radioB" value="Cash">Cash</input>
+                    <input type="radio" name="JeP_input" class="radioB" id="radioB" value="Transfer">Transfer</input>
+                </td> 
+            </tr>
+            <tr>
+                <td>Catatan </td>
+                <td>:</td>
+                <td>
+                <textarea row="5" cols="40%"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="right"><button type="Button" name="ButtonC" class="ButtonCancel"
+                    id="id_buttonC">Cancel</button>
+                    <input type="Submit" name="ButtonS" class="ButtonSubmit" id="id_buttonS" value="Submit"/>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </section>
+</body>
+</html>
