@@ -1,0 +1,39 @@
+body{
+    font-family: Helvetica,'Times New Roman', Times, serif;
+    background-color: rgb(255, 192, 203);
+}
+h1{
+    text-align: center;
+    color: rgb(255,0, 127);
+    margin-left: 20px;
+    }
+/*Selector dengan elemen HTML */ 
+p{
+    text-align: center; color: rgb(255, 192, 203);
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+h2{
+    text-align: left;
+    margin-left: 20px;
+    font-style: italic;
+}
+ul{
+    background-color: rgb(221, 160, 221);
+    list-style-position: inside;
+}
+ol{
+    list-style-type: square;
+    list-style-position: inside;
+}
+.section{
+    background-color: rgb(230, 230, 250);
+    font-style: italic;
+}
+.mark{
+    background-color:rgb(255, 250, 205);
+    list-style-position: inside;
+    font-style: italic;
+    font-weight: bold;
+}
