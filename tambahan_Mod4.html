@@ -1,0 +1,45 @@
+//Efek hide/show//
+<script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("p").hide();
+        });
+        $("#show").click(function(){
+            $("p").show();
+        });
+});
+</script>
+</head>
+<body>
+<h3> Klik disini </h3>
+<p>Jika ingin tau lebih lanjut silahkan klik dibawah ini</p>
+<button id="back">kembali</button>
+<button id="show">lanjut</button>
+
+//Efek animasi//
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){ $("div").animate({
+    height: 'toggle'
+            });
+        });
+    });
+    </script>
+    </head>
+    <body>
+    <h3>Praktikum ABP</h3>
+    <p>Klik disini</p>
+    <button>Start Animation</button>
+    <p>animasi ini akan memperlihatkan bentuk pembelajaran jika praktikum online</p>
+    <div
+    style="background:#1f25dd;height:100px;width:100px;position:absolute;"></div>
+
+//remove dom//  
+<body>
+    <h1>Remove DOM</h1>
+    <p id="id01">Halo maniezz</p>
+    <p id="id02">halo dek!</p>
+    <script>
+    document.getElementById("id02").remove()
+    </script>
+    </body>

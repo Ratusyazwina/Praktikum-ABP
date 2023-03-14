@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratu Syazwina - 1301204550</title>
+</head>
+<body>
+    <h1>Modul 4 Matkul ABP</h1>
+    <p> Ratu Syazwina - 1301204550</p>
+    <h4>Penyanyi Favorite</h4>
+    <p id="js"></p>
+    <h3>Daftar album</h3>
+    <p id="album"></p>
+    <h3>Anggota</h3>
+    <p id="member"></p>
+    <h3>lagu</h3>
+    <p id="song"></p>
+    <h3>Selesai Wamil semua</h3>
+    <p id="k"></p>
+    <h3>yang selanjutnya akan selesai Wamil</h3>
+    <p id="w"></p>
+    <h3>Biodata yang baru keluar tahun kemaren</h3>
+    <p id="b"></p>
+    <h3>Lagu pada album The Book of Us : Negetropy - Chaos swallowed up in love</h3>
+    <p id="c"></p>
+
+
+    <script>
+        var no = 1;
+        var nama = ". Day6 "
+        document.getElementById("js").innerHTML = no+nama;
+        var array = ["sunrise", "moonrise", "unlock"]; array.length;
+        array.push("Daydream");
+        document.getElementById("album").innerHTML = array;
+        var data = ["youngK,sungjin, wonpil,dowoon, jae", 2, true];
+        document.getElementById("member").innerHTML = data[0];
+
+        // pengendalian struktur
+        var lagu;
+        var num = "1";
+        if (num == "1") {lagu = "you make me";
+        } else if (num === "2") {lagu = "zombie";
+        } else if (num === "3") {lagu = "letting go";
+        } else {lagu = "mungkin bukan lagu day6";
+        }
+        document.getElementById("song").innerHTML = lagu;
+
+        // pembuatan objek
+        var kumpul = {bulan: "November", tahun : "2023"}
+        document.getElementById("k").innerHTML = kumpul.bulan;
+
+        // akses nilai property
+        var myObj = {
+        name : "day6",
+        years : 7,
+        member : {
+        member1: "Sungjin",
+        member2: "jae",
+        member3: "YoungK",
+        meber4: "Wonpil",
+        member5: "dowoon"}
+        }
+        document.getElementById("w").innerHTML = myObj.member["member3"];
+
+        //Prototype pada javascript
+        function bio(first, last, age, height,nationality){
+        this.firstName = name;
+        this.lastname = last;
+        this.age = age;
+        this.height = height;
+        this.nationality = "America"
+        }
+        var biodata = new bio("Park", "Jae Hyung", 30);
+        document.getElementById("b").innerHTML = "penyanyi yg kemaren nyanyi di HITC ini seorang berkebangsaan " + biodata.nationality;
+
+        // pembuatan fungsi
+        var album2 = {
+            song1: "You make me",
+            song2: "Healer",
+            song3: "everyday we fight",
+            albumNegentropy: function(){
+                return this.song1+" , "+this.song2+" , "+this.song3;
+            }
+        }
+        document.getElementById("c").innerHTML =album2.albumNegentropy();
+    </script>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <body>
+        <h1>Remove DOM</h1>
+        <p id="id01">Halo maniezz</p>
+        <p id="id02">halo dek!</p>
+        <script>
+        document.getElementById("id02").remove()
+        </script>
+</body>
+</html>
